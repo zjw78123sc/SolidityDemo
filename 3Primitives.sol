@@ -1,8 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-// Primitive Data Types
+// Primitive Data Types 原始数据类型
 // Here we introduce you to some primitive data types available in Solidity.
+// boolean
+// uint256
+// int256
+// address
 contract Primitives {
     /*
     uint stands for unsigned integer, meaning non negative integers
@@ -46,6 +50,10 @@ contract Primitives {
     bytes1 a = 0xb5; //  [10110101]
     bytes1 b = 0x56; //  [01010110]
 
-
-
+    // Default values
+    // Unassigned variables have a default value
+    bool public defaultBoo; // false
+    uint256 public defaultUint; // 0
+    int256 public defaultInt; // 0
+    address public defaultAddr; // 0x0000000000000000000000000000000000000000
 }

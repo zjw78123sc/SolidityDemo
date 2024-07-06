@@ -20,6 +20,58 @@
 			},
 			{
 				"inputs": [],
+				"name": "defaultAddr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "defaultBoo",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "defaultInt",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "defaultUint",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "i",
 				"outputs": [
 					{
@@ -151,11 +203,11 @@
 	},
 	"sources": {
 		"3Primitives.sol": {
-			"keccak256": "0x98e59a1efcd6a29562e524a4ef84d15144bc48f22f1646f1476e9361d841e771",
+			"keccak256": "0xcae4ef1aacb805efe59c3511a7afd19e2c71a17c3b60f558cbbad7876d904632",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7b682b40c96427b77e0ae2a50e8ac96755fd45e09da6a2fbd2818c80abfdf960",
-				"dweb:/ipfs/QmYGP51YwHNNUreFFd1tnhyodUhcU9gcXwUhEcEupwRZGi"
+				"bzz-raw://6a838963bcf85c843e9672aff9077f7e5dcffd7d31968ccf2b67bf294ef1edc9",
+				"dweb:/ipfs/QmbxxdHtWDRC9kjPiw7X8N7uz2qHebem2c6C2B4uZEvSBy"
 			]
 		}
 	},
