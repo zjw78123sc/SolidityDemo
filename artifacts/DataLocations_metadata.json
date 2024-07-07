@@ -8,12 +8,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "get",
+				"name": "arr",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -25,33 +25,8 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "myMap",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "remove",
+				"inputs": [],
+				"name": "f",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -59,17 +34,31 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_i",
-						"type": "uint256"
+						"internalType": "uint256[]",
+						"name": "_arr",
+						"type": "uint256[]"
 					}
 				],
-				"name": "set",
+				"name": "g",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_arr",
+						"type": "uint256[]"
+					}
+				],
+				"name": "h",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -88,7 +77,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"12Mapping.sol": "Mapping"
+			"18 DataLocations.sol": "DataLocations"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -102,12 +91,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"12Mapping.sol": {
-			"keccak256": "0x46c310f59363eeb510b3194a464511314f330f9bf431d371438235658d3d5181",
+		"18 DataLocations.sol": {
+			"keccak256": "0x8c24cce44b58501ac81e5fca2e5408cfaf6ba608a0ebb2e829388390fa7776ba",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d973237c1aa31c3ae1f79584a250d375b9110b22a9c192aedfd1244ecb5b928b",
-				"dweb:/ipfs/QmWexS4bsyDVaZmkUySPvaomhi6eyVrnBD6Sg64vajDS3v"
+				"bzz-raw://177e5359b2d60cf2a4e1647a40c0996b1c271e037619a2af9ad83c1293f41162",
+				"dweb:/ipfs/QmNRfobp17efJfaducdRWar3g4vMLFvpNKYcRGji9cxf1P"
 			]
 		}
 	},

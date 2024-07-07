@@ -8,12 +8,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "get",
+				"name": "arr",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -27,28 +27,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "myMap",
-				"outputs": [
-					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_index",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
 					}
 				],
 				"name": "remove",
@@ -57,19 +38,8 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_i",
-						"type": "uint256"
-					}
-				],
-				"name": "set",
+				"inputs": [],
+				"name": "test",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -88,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"12Mapping.sol": "Mapping"
+			"14ArrayRemoveByShifting.sol": "ArrayRemoveByShifting"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -102,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"12Mapping.sol": {
-			"keccak256": "0x46c310f59363eeb510b3194a464511314f330f9bf431d371438235658d3d5181",
+		"14ArrayRemoveByShifting.sol": {
+			"keccak256": "0xd424c49565d9f340c251a21591ba392eaae57e161a9778401bda8c780b9ab440",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d973237c1aa31c3ae1f79584a250d375b9110b22a9c192aedfd1244ecb5b928b",
-				"dweb:/ipfs/QmWexS4bsyDVaZmkUySPvaomhi6eyVrnBD6Sg64vajDS3v"
+				"bzz-raw://7fc3880a29515215a797e432897b67312b3f626e67a0a58929e08e95ac909f31",
+				"dweb:/ipfs/QmQ9DKYdPejLjRRVaSKXiVAs6AKW1X2ddUBt44jg6srsSs"
 			]
 		}
 	},

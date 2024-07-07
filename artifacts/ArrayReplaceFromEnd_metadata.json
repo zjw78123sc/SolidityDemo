@@ -8,12 +8,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "get",
+				"name": "arr",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -27,28 +27,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "myMap",
-				"outputs": [
-					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "index",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
 					}
 				],
 				"name": "remove",
@@ -57,19 +38,8 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_i",
-						"type": "uint256"
-					}
-				],
-				"name": "set",
+				"inputs": [],
+				"name": "test",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -88,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"12Mapping.sol": "Mapping"
+			"15ArrayReplaceFromEnd.sol": "ArrayReplaceFromEnd"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -102,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"12Mapping.sol": {
-			"keccak256": "0x46c310f59363eeb510b3194a464511314f330f9bf431d371438235658d3d5181",
+		"15ArrayReplaceFromEnd.sol": {
+			"keccak256": "0x871ac42fc71cf1eb0e4330aaa656d5570ed851557fe9b14b139582a17bcd6fc5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d973237c1aa31c3ae1f79584a250d375b9110b22a9c192aedfd1244ecb5b928b",
-				"dweb:/ipfs/QmWexS4bsyDVaZmkUySPvaomhi6eyVrnBD6Sg64vajDS3v"
+				"bzz-raw://69dcfe33fbb27f55dd22bb81344ac4f9f946ae4ccd01b394e8ab0c09ce6c1d36",
+				"dweb:/ipfs/QmekjaCf4a4VNbV1NBTFiGsk3bnueFm4svxb3rPX3SjTSL"
 			]
 		}
 	},
