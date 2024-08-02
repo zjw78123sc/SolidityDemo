@@ -1,0 +1,76 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "Log",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "addr1",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "addr2",
+						"type": "address"
+					}
+				],
+				"name": "splitEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"L1/Task5-1-3/08Assert.sol": "Account"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"L1/Task5-1-3/08Assert.sol": {
+			"keccak256": "0x5578ceb5ef683497d7fc2b0dafb37ec09d98c6245963bd17c5ae6ff38069981c",
+			"urls": [
+				"bzz-raw://43b936d9f49941a6af7a27d01f9f391f77338bbb1e76838fd065cb3f238aca08",
+				"dweb:/ipfs/QmcmydQdzsWiZM8kU1L6Wv1GB8hBydV9HRY39v7qQ4boaL"
+			]
+		}
+	},
+	"version": 1
+}

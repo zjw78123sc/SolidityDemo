@@ -55,7 +55,9 @@ contract Error {
 // Here is another example
 contract Account {
     uint256 public balance;
-    uint256 public constant MAX_UINT = 2 ** 256 - 1;
+    uint256 public constant MAX_UINT = 2**256 - 1;
+
+ 
 
     function deposit(uint256 _amount) public {
         uint256 oldBalance = balance;
@@ -83,4 +85,6 @@ contract Account {
 
         assert(balance <= oldBalance);
     }
+
+ 
 }

@@ -6,24 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "balance",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "withdrawAmount",
-						"type": "uint256"
-					}
-				],
-				"name": "InsufficientBalance",
-				"type": "error"
-			},
-			{
 				"inputs": [],
-				"name": "num",
+				"name": "MAX_UINT",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -36,8 +20,14 @@
 			},
 			{
 				"inputs": [],
-				"name": "testAssert",
-				"outputs": [],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "view",
 				"type": "function"
 			},
@@ -45,39 +35,26 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_withdrawAmount",
+						"name": "_amount",
 						"type": "uint256"
 					}
 				],
-				"name": "testCustomError",
+				"name": "deposit",
 				"outputs": [],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_i",
+						"name": "_amount",
 						"type": "uint256"
 					}
 				],
-				"name": "testRequire",
+				"name": "withdraw",
 				"outputs": [],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_i",
-						"type": "uint256"
-					}
-				],
-				"name": "testRevert",
-				"outputs": [],
-				"stateMutability": "pure",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -94,7 +71,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"22Error.sol": "Error"
+			"22Error.sol": "Account"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
