@@ -22,6 +22,32 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bytes32",
+						"name": "txHash",
+						"type": "bytes32"
+					}
+				],
+				"name": "ExecutionFailure",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bytes32",
+						"name": "txHash",
+						"type": "bytes32"
+					}
+				],
+				"name": "ExecutionSuccess",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "bytes32",
@@ -76,6 +102,40 @@
 					}
 				],
 				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "signatures",
+						"type": "bytes"
+					}
+				],
+				"name": "execTransaction",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -178,6 +238,15 @@
 					"returns": {
 						"_0": "交易哈希bytes."
 					}
+				},
+				"execTransaction(address,uint256,bytes,bytes)": {
+					"details": "在收集足够的多签签名后，执行交易",
+					"params": {
+						"data": "calldata",
+						"signatures": "打包的签名，对应的多签地址由小到达，方便检查。 ({bytes32 r}{bytes32 s}{uint8 v}) (第一个多签的签名, 第二个多签的签名 ... )",
+						"to": "目标合约地址",
+						"value": "msg.value，支付的以太坊"
+					}
 				}
 			},
 			"version": 1
@@ -205,11 +274,11 @@
 	},
 	"sources": {
 		"L2/Task2/MultisigWallet.sol": {
-			"keccak256": "0x636115322c3830f9ff8c8a6a1405eca9441892256850207b9158059f05c5d8bc",
+			"keccak256": "0xe770789dc14ebcef58e1f9249432d70f607ae4c69e808da487cba32dbe377c3a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cbdf45ebf8480ddeefd00442d67db8b1f1be7b3dcf853390a335232883cfd6f8",
-				"dweb:/ipfs/QmYAe59hBZRVKEa9nenAsXLn3KSS7S9Ud5Jn6hMUEa3rwZ"
+				"bzz-raw://9417bdc4a4d0dce089aaf7b9b536d1bb5a0bb9129d1157b65d630bbd7ee6a5d4",
+				"dweb:/ipfs/QmWEcbiTEbg9wyupCAiRiat9P9ND8JLMZ9XTJEvZpEA7pW"
 			]
 		}
 	},

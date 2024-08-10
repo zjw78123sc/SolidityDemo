@@ -8,9 +8,40 @@ contract MultisigWallet {
     uint256 public threshold; // 多签执行门槛，交易至少有n个多签人签名才能被执行。
     uint256 public nonce; // nonce，防止签名重放攻击
 
+    event ExecutionSuccess(bytes32 txHash);    // 交易成功事件
+    event ExecutionFailure(bytes32 txHash);    // 交易失败事件
+
     // 构造函数，初始化owners, isOwner, ownerCount, threshold
     constructor(address[] memory _owners, uint256 _threshold) {
         _setupOwners(_owners, _threshold);
+    }
+
+    /// @dev 在收集足够的多签签名后，执行交易
+    /// @param to 目标合约地址
+    /// @param value msg.value，支付的以太坊
+    /// @param data calldata
+    /// @param signatures 打包的签名，对应的多签地址由小到达，方便检查。 ({bytes32 r}{bytes32 s}{uint8 v}) (第一个多签的签名, 第二个多签的签名 ... )
+    function execTransaction(
+        address to,
+        uint256 value,
+        bytes memory data,
+        bytes memory signatures
+    ) public payable virtual returns (bool success) {
+        // 编码交易数据，计算哈希
+        bytes32 txHash = encodeTransactionData(
+            to,
+            value,
+            data,
+            nonce,
+            block.chainid
+        );
+        nonce++; // 增加nonce
+        checkSignatures(txHash, signatures); // 检查签名
+        // 利用call执行交易，并获取交易结果
+        (success, ) = to.call{value: value}(data);
+        require(success, "DQ5004");
+        if (success) emit ExecutionSuccess(txHash);
+        else emit ExecutionFailure(txHash);
     }
 
     /// @dev 初始化owners, isOwner, ownerCount,threshold
