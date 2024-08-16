@@ -119,19 +119,12 @@ contract RccStake {
         uint256 _minDepositAmount,
         uint256 _unstakeLockedBlocks
     ) public view {
-      
         Pool pool;
 
-          if(_Pools[_stTokenAddress] != null){
-pool = _Pools[_stTokenAddress] ;
-        }
+        pool = _Pools[_stTokenAddress];
         pool.poolWeight = _poolWeight;
         pool.minDepositAmount = _minDepositAmount;
         pool.unstakeLockedBlocks = _unstakeLockedBlocks;
         _Pools[_stTokenAddress] = pool;
     }
-
-
-
-
 }
