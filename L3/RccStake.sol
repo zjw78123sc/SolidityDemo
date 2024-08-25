@@ -119,7 +119,7 @@ contract RccStake {
         uint256 _minDepositAmount,
         uint256 _unstakeLockedBlocks
     ) public view {
-        Pool pool;
+        Pool memory pool;
 
         pool = _Pools[_stTokenAddress];
         pool.poolWeight = _poolWeight;
